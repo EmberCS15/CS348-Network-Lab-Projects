@@ -1,0 +1,113 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  
+}
+body{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto;
+}
+.topText, .brandText{
+    color:black;
+    font-style: bold;
+    font-family: 'Play',sans-serif;
+    font-size:190%;
+    color:#0000cc;
+    text-shadow: 1px 1px 1px #0000cc;
+}
+.glyphicon{
+  height:190%;
+  color:#0000cc;
+}
+.game-op{
+  width:100%;
+}
+
+.timer,  .info{
+  background-color: black;
+  height:100%;
+}
+
+.timer-show,.info-show{
+  height:550px;
+}
+
+#demo,#colorTurn{
+  font-size: 200%;
+  color: white;
+  padding-top:30%;
+  padding-bottom:20%;
+}
+
+/*Table CSS*/
+.gameboard{
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  background-color:#000000;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+#grid {
+  margin: 20px auto;
+  display: table;
+  width: 460px;
+  height: 460px;
+  padding: 0px;
+  border-collapse: collapse;
+  background: #129104;
+  border: 1px solid #0a5e01;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+   border-spacing: 5px 5px;
+}
+
+.tabler {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000000;
+  padding: 7px;
+}
+
+.disc {
+  width: 36px;
+  height: 36px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 2px;
+}
+/*end tablle css*/
+
+#exit{
+  width:60%;
+}
+.msg{
+  font-size:150%;
+  color:white;
+}
+div.disabled
+{
+  pointer-events: none;
+
+  /* for "disabled" effect */
+  opacity: 0.5;
+  background: #CCC;
+}
+
+#Winner{
+  color:red;
+  font-size:130%;
+}

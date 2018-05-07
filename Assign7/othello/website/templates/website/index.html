@@ -1,0 +1,35 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}Othello : Home{% endblock %}
+{% block content %}
+
+<div clas="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			{% if error_message %}
+				<p style="color:red;text-align: center;"><strong>{{ error_message }}</strong></p>
+			{% endif %}
+			<div class="button-class">
+			<a href="{% url 'website:game' -1 %}" type="button" class="btn btn-warning btn-lg game-op" target="_blank">Create New Game</a>
+			<br><br>
+			<a href="#" class="btn btn-warning btn-lg game-op" data-toggle="collapse" data-target="#token-num">Join Existing Game</a>
+            <center>
+            <br><br>
+            <form id="token-num" action="{% url 'website:joingame' %}" class="collapse" method='get' target="_blank">
+                {% csrf_token %}
+                <input typr='text' placeholder='Token_no' size='35' name='token'/>&nbsp;&nbsp;&nbsp;
+                <input type='submit' value='Submit' class='btn btn-danger'/>
+            </form>
+            <br>
+            <center>
+		</div>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$("body").css("background-image","url({% static 'website/images/othello-6.jpg' %})");
+	//$("body").css("","");
+});
+
+</script>
+{% endblock %}
